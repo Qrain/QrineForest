@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.TypeScript.MSBuild.1.8.11\tools\Microsoft.TypeScript.Default.props" Condition="Exists('..\packages\Microsoft.TypeScript.MSBuild.1.8.11\tools\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\packages\Microsoft.TypeScript.MSBuild.1.8.11\tools\Microsoft.TypeScript.NuGet.props" Condition="Exists('..\packages\Microsoft.TypeScript.MSBuild.1.8.11\tools\Microsoft.TypeScript.NuGet.props')" />
+  <Import Project="..\packages\Microsoft.TypeScript.MSBuild.1.8.11\tools\Microsoft.TypeScript.targets" Condition="Exists('..\packages\Microsoft.TypeScript.MSBuild.1.8.11\tools\Microsoft.TypeScript.targets')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>QrineForest</Name>
+    <ProjectGuid>95be2ce4-87c8-42c6-bcde-3f73c77516a6</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>QrineForest</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="css\" />
+    <Folder Include="css\font-awesome-4.2.0\" />
+    <Folder Include="css\font-awesome-4.2.0\css\" />
+    <Folder Include="css\font-awesome-4.2.0\fonts\" />
+    <Folder Include="css\highlight-js-8.6\" />
+    <Folder Include="css\highlight-js-9.4.0\" />
+    <Folder Include="img\" />
+    <Folder Include="js\" />
+    <Folder Include="languages\" />
+    <Folder Include="post-formats\" />
+    <Folder Include="scss\" />
+    <Folder Include="scss\animate\" />
+    <Folder Include="scss\breakpoints\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\editor-style.css" />
+    <Content Include="css\editor-style.css.map" />
+    <Content Include="css\font-awesome-4.2.0\css\font-awesome.css" />
+    <Content Include="css\font-awesome-4.2.0\css\font-awesome.min.css" />
+    <Content Include="css\font-awesome-4.2.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="css\font-awesome-4.2.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="css\font-awesome-4.2.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="css\font-awesome-4.2.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="css\font-awesome-4.2.0\fonts\FontAwesome.otf" />
+    <Content Include="css\highlight-js-8.6\default.css" />
+    <Content Include="css\highlight-js-8.6\ir_black.css" />
+    <Content Include="css\highlight-js-9.4.0\agate.css" />
+    <Content Include="css\highlight-js-9.4.0\androidstudio.css" />
+    <Content Include="css\highlight-js-9.4.0\arduino-light.css" />
+    <Content Include="css\highlight-js-9.4.0\arta.css" />
+    <Content Include="css\highlight-js-9.4.0\ascetic.css" />
+    <Content Include="css\highlight-js-9.4.0\atelier-cave-dark.css" />
+    <Content Include="css\highlight-js-9.4.0\atelier-cave-light.css" />
+    <Content Include="css\highlight-js-9.4.0\atelier-dune-dark.css" />
+    <Content Include="css\highlight-js-9.4.0\atelier-dune-light.css" />
+    <Content Include="css\highlight-js-9.4.0\atelier-estuary-dark.css" />
+    <Content Include="css\highlight-js-9.4.0\atelier-estuary-light.css" />
+    <Content Include="css\highlight-js-9.4.0\atelier-forest-dark.css" />
+    <Content Include="css\highlight-js-9.4.0\atelier-forest-light.css" />
+    <Content Include="css\highlight-js-9.4.0\atelier-heath-dark.css" />
+    <Content Include="css\highlight-js-9.4.0\atelier-heath-light.css" />
+    <Content Include="css\highlight-js-9.4.0\atelier-lakeside-dark.css" />
+    <Content Include="css\highlight-js-9.4.0\atelier-lakeside-light.css" />
+    <Content Include="css\highlight-js-9.4.0\atelier-plateau-dark.css" />
+    <Content Include="css\highlight-js-9.4.0\atelier-plateau-light.css" />
+    <Content Include="css\highlight-js-9.4.0\atelier-savanna-dark.css" />
+    <Content Include="css\highlight-js-9.4.0\atelier-savanna-light.css" />
+    <Content Include="css\highlight-js-9.4.0\atelier-seaside-dark.css" />
+    <Content Include="css\highlight-js-9.4.0\atelier-seaside-light.css" />
+    <Content Include="css\highlight-js-9.4.0\atelier-sulphurpool-dark.css" />
+    <Content Include="css\highlight-js-9.4.0\atelier-sulphurpool-light.css" />
+    <Content Include="css\highlight-js-9.4.0\brown-paper.css" />
+    <Content Include="css\highlight-js-9.4.0\brown-papersq.png" />
+    <Content Include="css\highlight-js-9.4.0\codepen-embed.css" />
+    <Content Include="css\highlight-js-9.4.0\color-brewer.css" />
+    <Content Include="css\highlight-js-9.4.0\dark.css" />
+    <Content Include="css\highlight-js-9.4.0\darkula.css" />
+    <Content Include="css\highlight-js-9.4.0\default.css" />
+    <Content Include="css\highlight-js-9.4.0\docco.css" />
+    <Content Include="css\highlight-js-9.4.0\dracula.css" />
+    <Content Include="css\highlight-js-9.4.0\far.css" />
+    <Content Include="css\highlight-js-9.4.0\foundation.css" />
+    <Content Include="css\highlight-js-9.4.0\github-gist.css" />
+    <Content Include="css\highlight-js-9.4.0\github.css" />
+    <Content Include="css\highlight-js-9.4.0\googlecode.css" />
+    <Content Include="css\highlight-js-9.4.0\grayscale.css" />
+    <Content Include="css\highlight-js-9.4.0\gruvbox-dark.css" />
+    <Content Include="css\highlight-js-9.4.0\gruvbox-light.css" />
+    <Content Include="css\highlight-js-9.4.0\hopscotch.css" />
+    <Content Include="css\highlight-js-9.4.0\hybrid.css" />
+    <Content Include="css\highlight-js-9.4.0\idea.css" />
+    <Content Include="css\highlight-js-9.4.0\ir-black.css" />
+    <Content Include="css\highlight-js-9.4.0\ir_black.css" />
+    <Content Include="css\highlight-js-9.4.0\kimbie.dark.css" />
+    <Content Include="css\highlight-js-9.4.0\kimbie.light.css" />
+    <Content Include="css\highlight-js-9.4.0\magula.css" />
+    <Content Include="css\highlight-js-9.4.0\mono-blue.css" />
+    <Content Include="css\highlight-js-9.4.0\monokai-sublime.css" />
+    <Content Include="css\highlight-js-9.4.0\monokai.css" />
+    <Content Include="css\highlight-js-9.4.0\obsidian.css" />
+    <Content Include="css\highlight-js-9.4.0\paraiso-dark.css" />
+    <Content Include="css\highlight-js-9.4.0\paraiso-light.css" />
+    <Content Include="css\highlight-js-9.4.0\pojoaque.css" />
+    <Content Include="css\highlight-js-9.4.0\pojoaque.jpg" />
+    <Content Include="css\highlight-js-9.4.0\purebasic.css" />
+    <Content Include="css\highlight-js-9.4.0\qtcreator_dark.css" />
+    <Content Include="css\highlight-js-9.4.0\qtcreator_light.css" />
+    <Content Include="css\highlight-js-9.4.0\railscasts.css" />
+    <Content Include="css\highlight-js-9.4.0\rainbow.css" />
+    <Content Include="css\highlight-js-9.4.0\school-book.css" />
+    <Content Include="css\highlight-js-9.4.0\school-book.png" />
+    <Content Include="css\highlight-js-9.4.0\solarized-dark.css" />
+    <Content Include="css\highlight-js-9.4.0\solarized-light.css" />
+    <Content Include="css\highlight-js-9.4.0\sunburst.css" />
+    <Content Include="css\highlight-js-9.4.0\tomorrow-night-blue.css" />
+    <Content Include="css\highlight-js-9.4.0\tomorrow-night-bright.css" />
+    <Content Include="css\highlight-js-9.4.0\tomorrow-night-eighties.css" />
+    <Content Include="css\highlight-js-9.4.0\tomorrow-night.css" />
+    <Content Include="css\highlight-js-9.4.0\tomorrow.css" />
+    <Content Include="css\highlight-js-9.4.0\vs.css" />
+    <Content Include="css\highlight-js-9.4.0\xcode.css" />
+    <Content Include="css\highlight-js-9.4.0\xt256.css" />
+    <Content Include="css\highlight-js-9.4.0\zenburn.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\style.css.map" />
+    <Content Include="img\clip.png" />
+    <Content Include="img\_clip.png" />
+    <Content Include="js\highlight.pack.js" />
+    <Content Include="js\jQueryRotate.js" />
+    <Content Include="js\my.js" />
+    <TypeScriptCompile Include="js\test.ts" />
+    <Content Include="js\test.js" />
+    <Content Include="languages\en_US.mo" />
+    <Content Include="languages\en_US.po" />
+    <Content Include="languages\ja.mo" />
+    <Content Include="languages\ja.po" />
+    <Content Include="packages.config" />
+    <Content Include="screenshot.png" />
+    <Content Include="scss\animate\_animate.scss" />
+    <Content Include="scss\animate\_bounce.scss" />
+    <Content Include="scss\animate\_bounceIn.scss" />
+    <Content Include="scss\animate\_bounceInDown.scss" />
+    <Content Include="scss\animate\_bounceInLeft.scss" />
+    <Content Include="scss\animate\_bounceInRight.scss" />
+    <Content Include="scss\animate\_bounceInUp.scss" />
+    <Content Include="scss\animate\_bounceOut.scss" />
+    <Content Include="scss\animate\_bounceOutDown.scss" />
+    <Content Include="scss\animate\_bounceOutLeft.scss" />
+    <Content Include="scss\animate\_bounceOutRight.scss" />
+    <Content Include="scss\animate\_bounceOutUp.scss" />
+    <Content Include="scss\animate\_fadeIn.scss" />
+    <Content Include="scss\animate\_fadeInDown.scss" />
+    <Content Include="scss\animate\_fadeInDownBig.scss" />
+    <Content Include="scss\animate\_fadeInLeft.scss" />
+    <Content Include="scss\animate\_fadeInLeftBig.scss" />
+    <Content Include="scss\animate\_fadeInRight.scss" />
+    <Content Include="scss\animate\_fadeInRightBig.scss" />
+    <Content Include="scss\animate\_fadeInUp.scss" />
+    <Content Include="scss\animate\_fadeInUpBig.scss" />
+    <Content Include="scss\animate\_fadeOut.scss" />
+    <Content Include="scss\animate\_fadeOutDown.scss" />
+    <Content Include="scss\animate\_fadeOutDownBig.scss" />
+    <Content Include="scss\animate\_fadeOutLeft.scss" />
+    <Content Include="scss\animate\_fadeOutLeftBig.scss" />
+    <Content Include="scss\animate\_fadeOutRight.scss" />
+    <Content Include="scss\animate\_fadeOutRightBig.scss" />
+    <Content Include="scss\animate\_fadeOutUp.scss" />
+    <Content Include="scss\animate\_fadeOutUpBig.scss" />
+    <Content Include="scss\animate\_flash.scss" />
+    <Content Include="scss\animate\_flip.scss" />
+    <Content Include="scss\animate\_flipInX.scss" />
+    <Content Include="scss\animate\_flipInY.scss" />
+    <Content Include="scss\animate\_flipOutX.scss" />
+    <Content Include="scss\animate\_flipOutY.scss" />
+    <Content Include="scss\animate\_hinge.scss" />
+    <Content Include="scss\animate\_lightSpeedIn.scss" />
+    <Content Include="scss\animate\_lightSpeedOut.scss" />
+    <Content Include="scss\animate\_properties.scss" />
+    <Content Include="scss\animate\_pulse.scss" />
+    <Content Include="scss\animate\_rollIn.scss" />
+    <Content Include="scss\animate\_rollOut.scss" />
+    <Content Include="scss\animate\_rotateIn.scss" />
+    <Content Include="scss\animate\_rotateInDownLeft.scss" />
+    <Content Include="scss\animate\_rotateInDownRight.scss" />
+    <Content Include="scss\animate\_rotateInUpLeft.scss" />
+    <Content Include="scss\animate\_rotateInUpRight.scss" />
+    <Content Include="scss\animate\_rotateOut.scss" />
+    <Content Include="scss\animate\_rotateOutDownLeft.scss" />
+    <Content Include="scss\animate\_rotateOutDownRight.scss" />
+    <Content Include="scss\animate\_rotateOutUpLeft.scss" />
+    <Content Include="scss\animate\_rotateOutUpRight.scss" />
+    <Content Include="scss\animate\_shake.scss" />
+    <Content Include="scss\animate\_swing.scss" />
+    <Content Include="scss\animate\_tada.scss" />
+    <Content Include="scss\animate\_wiggle.scss" />
+    <Content Include="scss\animate\_wobble.scss" />
+    <Content Include="scss\config.rb" />
+    <Content Include="scss\editor-style.scss" />
+    <Content Include="scss\style.scss" />
+    <Content Include="scss\_normalize.scss" />
+    <Content Include="scss\_print.scss" />
+    <Content Include="scss\_style-main.scss" />
+    <Content Include="scss\_style-smart.scss" />
+    <Content Include="scss\_variables.scss" />
+    <Content Include="style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="comments.php" />
+    <Compile Include="footer.php" />
+    <Compile Include="functions.php" />
+    <Compile Include="header.php" />
+    <Compile Include="header_menu.php" />
+    <Compile Include="index.php" />
+    <Compile Include="page.php" />
+    <Compile Include="post-formats\adjacent-post.php" />
+    <Compile Include="post-formats\content.php" />
+    <Compile Include="post-formats\pagination.php" />
+    <Compile Include="post-formats\post-date.php" />
+    <Compile Include="post-formats\single.php" />
+    <Compile Include="search.php" />
+    <Compile Include="searchform.php" />
+    <Compile Include="sidebar.php" />
+    <Compile Include="single.php" />
+  </ItemGroup>
+</Project>

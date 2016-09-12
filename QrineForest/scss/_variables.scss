@@ -1,0 +1,41 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Variables
+
+Here is where we declare all our variables like colors, fonts,
+base values, and defaults. We want to make sure this file ONLY
+contains variables that way our files don't get all messy.
+No one likes a mess.
+
+******************************************************************/
+
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+$black: #2F3437; //黒橡（くろつるばみ）
+$white: #fffffa; //胡粉色（ごふんいろ）
+
+$gray: mix($black, $white);
+$light-gray: lighten($black, 60%);
+$font-color: $black; //#5c6b80;
+$meta-gray: #9fa6b4;
+
+$green: #51cc33;
+$blue: #378EC8;
+$red: #ef2f1c;
+
+//アンカーテキストの各色
+// リンク色（暗色＝背景明るいとき）
+$a-dark-color: #1f72d8;
+$a-dark-hover: #FF7100; //#ff2a00;
+// リンク色（明色＝背景暗いとき）
+$a-light-color: $white;
+$a-light-hover: #ffcc33;
+
+//線色（基準）
+$border-color: $gray;
+$disabled-gray: #cfcfcf;

@@ -1,0 +1,280 @@
+/******************************************************************
+Site Name: Qrine Forest
+Author:
+Stylesheet: Editor Stylesheet
+******************************************************************/
+@import "compass/css3";
+@import "compass/layout";
+/*@import "normalize";*/
+// 色など変数をインポート
+@import "variables";
+
+/* Elements
+-------------------------------------------------------------- */
+body.mce-content-body {
+    font-family: "Lucida Grande","游ゴシック",yugothic, Meiryo, 'Meiryo UI', 'Hiragino Kaku Gothic ProN', sans-serif;
+    font-size: 100%;
+    line-height: 1.3;
+    padding: 10px;
+
+    strong, b {
+        font-weight: bold;
+        margin: 0 3px;
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 0.6em;
+        text-indent: 1em;
+    }
+    // 基準となるh1のフォントサイズ
+    $h1-size: 2.2em;
+    // 縮小する倍率
+    $h1-size-scale: 0.85;
+
+    h1, h2, h3, h4, h5 {
+        text-rendering: optimizelegibility;
+        font-weight: 500;
+        line-height: 1.4em;
+        margin: 0.9em 0 0.6em;
+    }
+
+    h1 {
+        font-size: $h1-size;
+    }
+    // WP記事では見出しレベル１
+    h2 {
+        font-size: $h1-size * pow($h1-size-scale, 1);
+        padding: 8px 16px;
+        background-color: $blue;
+        color: $white;
+    }
+    // WP記事では見出しレベル２
+    h3 {
+        font-size: $h1-size * pow($h1-size-scale, 2);
+        margin-right: 15%;
+        padding: 1px 6px;
+        border-bottom: 3px solid $blue;
+        border-left: 6px solid $blue;
+    }
+    // WP記事では見出しレベル３
+    h4 {
+        font-size: $h1-size * pow($h1-size-scale, 3);
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        text-decoration: underline;
+    }
+
+    a {
+        color: $a-dark-color;
+        text-decoration: none;
+        @include transition(color .25s ease-out);
+
+        &:hover {
+            color: $a-dark-hover !important;
+        }
+
+        &:active, &:focus, &:visited {
+        }
+    }
+
+    ul {
+        list-style: disc;
+    }
+
+    ol {
+        list-style: decimal;
+    }
+
+    ul, ol {
+        /*padding-left: 15px;*/
+        ul, ol {
+            /*margin-left: 20px;*/
+            /*padding-left: 0;*/
+        }
+
+        li {
+            //font-size: 0.9em;
+            font-weight: normal;
+            color: $black;
+            line-height: 1.7;
+        }
+    }
+
+    dl {
+        dt {
+            float: left;
+            clear: left;
+            width: 100%;
+            text-align: left;
+            font-weight: bold;
+            color: #202020;
+            //font-size: .9em;
+            &:after {
+                content: "";
+            }
+        }
+
+        dd {
+            margin: 0 0 0 5%;
+            font-size: .85em;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        border: 1px solid #e6e4e2;
+        color: #202020;
+        font-size: .9em;
+
+        tr {
+            border-bottom: 1px dotted gray;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &:nth-child(even) td {
+                /*background-color: #f9f9f9;*/
+            }
+
+            td, th {
+                /*border-top: 1px solid #e6e4e2;*/
+                padding: 8px;
+            }
+
+            th {
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+
+        a {
+            color: #29a2ff;
+            text-decoration: none;
+
+            &:hover {
+                color: #202020;
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+    blockquote {
+        margin-left: 30px;
+        border-left: 4px solid #f4f3f2;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-left: 15px;
+        font-size: 1em;
+
+        cite {
+            display: block;
+        }
+    }
+    //添付ファイル？
+    .attachment {
+        text-align: center;
+    }
+    //アンダーライン under line
+    //http://weboook.blog22.fc2.com/blog-entry-268.html
+    span[style="text-decoration: underline;"] {
+        text-decoration: none !important;
+        @include background-image(linear-gradient(transparent 70%, $a-light-hover 80%));
+    }
+
+
+
+    textarea {
+        width: 100%;
+        height: 250px;
+        border: 1px solid #e6e4e2;
+        padding: 10px;
+    }
+
+    select {
+        width: 100%;
+        height: 45px;
+        border: 1px solid #e6e4e2;
+        text-indent: 5px;
+    }
+
+    option {
+        padding: 10px;
+    }
+
+
+    address {
+        font-style: normal;
+    }
+
+    abbr, acronym {
+        border-bottom: .1em dotted;
+    }
+
+    big {
+        font-weight: bold;
+    }
+
+    cite {
+        margin-top: 15px;
+        font-size: .8em;
+        font-weight: bold;
+        margin-left: 10px;
+        font-style: italic;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    kbd {
+        display: inline-block;
+
+        @include border-radius(3px);
+        -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+        -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+        background-color: #f7f7f7;
+        border: 1px solid #ccc;
+        color: #333;
+        font-size: .9em;
+        line-height: 1.4;
+        margin: 0 .1em;
+        padding: .1em .6em;
+        text-shadow: 0 1px 0 #fff;
+    }
+
+    ins {
+        background-color: #fff9c0;
+        text-decoration: none;
+    }
+
+    pre {
+        padding: 0px;
+        white-space: pre-wrap; // css-3
+        font-size: 0.95em;
+        font-weight: normal;
+    }
+
+    code {
+        display: block;
+        margin: 10px 5px 10px;
+        padding: 5px;
+        border: 1px solid #bbbbbb;
+        border-radius: 10px;
+        font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
+        line-height: 1.2;
+    }
+
+    q {
+        font-style: italic;
+    }
+}

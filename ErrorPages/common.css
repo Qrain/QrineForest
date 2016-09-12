@@ -1,0 +1,19 @@
+body {
+            font-family: 'Josefin Sans', sans-serif;
+            background-color: #fffffc;
+            text-align: center;
+            color: #333631;
+        }
+
+        svg {
+            width: 200px;
+            height: 100%;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 2rem;
+        }

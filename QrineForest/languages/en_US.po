@@ -1,0 +1,176 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Wordit\n"
+"POT-Creation-Date: 2015-03-20 16:37+0200\n"
+"PO-Revision-Date: 2015-03-20 16:37+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../comments.php:7
+msgid "Comments"
+msgstr "Comments"
+
+#: ../comments.php:7
+msgid "1 Comments"
+msgstr "1 Comments"
+
+#: ../comments.php:7
+msgid "% Comments"
+msgstr "% Comments"
+
+#: ../comments.php:16
+msgid "Older Comments"
+msgstr "Older Comments"
+
+#: ../comments.php:20
+msgid "Newer Comments"
+msgstr "Newer Comments"
+
+#: ../comments.php:31
+msgid "Name"
+msgstr "Name"
+
+#: ../comments.php:32
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: ../comments.php:33
+msgid "Website"
+msgstr "Website"
+
+#: ../comments.php:38
+msgid "Message (Required)"
+msgstr "Message (Required)"
+
+#: ../comments.php:41
+msgid "Leave a comment"
+msgstr "Leave a comment"
+
+#: ../comments.php:42
+#, php-format
+msgid " Reply to %s"
+msgstr " Reply to %s"
+
+#: ../comments.php:43
+msgid "Cancel reply"
+msgstr "Cancel reply"
+
+#: ../comments.php:44
+msgid "Submit"
+msgstr "Submit"
+
+#: ../footer.php:3
+msgid "Proudly powered by"
+msgstr "Proudly powered by"
+
+#: ../footer.php:3
+msgid "Theme: Wordit by"
+msgstr "Theme: Wordit by"
+
+#: ../functions.php:64
+msgid "Header Menu"
+msgstr "Header Menu"
+
+#: ../functions.php:101
+msgid "Pending approval"
+msgstr "Pending approval"
+
+#: ../functions.php:108
+msgid "Reply"
+msgstr "Reply"
+
+#: ../functions.php:111
+msgid "Edit"
+msgstr "Edit"
+
+#: ../functions.php:127
+msgid "Bottom 1 of 3 Sidebar"
+msgstr "Bottom 1 of 3 Sidebar"
+
+#: ../functions.php:129
+msgid "Wordit bottom left sidebar widget area"
+msgstr "Wordit bottom left sidebar widget area"
+
+#: ../functions.php:138
+msgid "Bottom 2 of 3 Sidebar"
+msgstr "Bottom 2 of 3 Sidebar"
+
+#: ../functions.php:140
+msgid "Wordit bottom center sidebar widget area"
+msgstr "Wordit bottom center sidebar widget area"
+
+#: ../functions.php:149
+msgid "Bottom 3 of 3 Sidebar"
+msgstr "Bottom 3 of 3 Sidebar"
+
+#: ../functions.php:151
+msgid "Wordit bottom right sidebar widget area"
+msgstr "Wordit bottom right sidebar widget area"
+
+#: ../index.php:24
+msgid "Sorry, nothing found"
+msgstr "Sorry, nothing found"
+
+#: ../page.php:35 ../post-formats/single.php:28
+msgid "Pages:"
+msgstr "Pages:"
+
+#: ../page.php:41 ../post-formats/single.php:34
+msgid "Next page"
+msgstr "Next page"
+
+#: ../page.php:42 ../post-formats/single.php:35
+msgid "Previous page"
+msgstr "Previous page"
+
+#: ../post-formats/content.php:32 ../single.php:57
+msgid "Continue Reading"
+msgstr "Continue Reading"
+
+#: ../post-formats/pagination.php:3
+msgid "Newer Entries"
+msgstr "Newer Entries"
+
+#: ../post-formats/pagination.php:7
+msgid "Older Entries"
+msgstr "Older Entries"
+
+#: ../post-formats/single.php:47
+msgid "Back to top"
+msgstr "Back to top"
+
+#: ../search.php:24
+msgid "Sorry, no results found"
+msgstr "Sorry, no results found"
+
+#: ../searchform-popup.php:6
+msgid "Search"
+msgstr "Search"
+
+#: ../single.php:36
+msgid "Next Post"
+msgstr "Next Post"
+
+#~ msgid "Your name"
+#~ msgstr "Your name"
+
+#~ msgid "Message"
+#~ msgstr "Message"
+
+#~ msgid "Save Changes"
+#~ msgstr "Save Changes"
+
+#~ msgid "Get in touch!"
+#~ msgstr "Get in touch!"
+
+#~ msgid "Follow us!"
+#~ msgstr "Follow us!"

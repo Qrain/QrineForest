@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "QrineForest", "QrineForest\QrineForest.phpproj", "{95BE2CE4-87C8-42C6-BCDE-3F73C77516A6}"
+EndProject
+Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "ErrorPages", "ErrorPages\ErrorPages.phpproj", "{ACDDC7AD-D518-441A-85F0-BC3BCA352EC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95BE2CE4-87C8-42C6-BCDE-3F73C77516A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95BE2CE4-87C8-42C6-BCDE-3F73C77516A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACDDC7AD-D518-441A-85F0-BC3BCA352EC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACDDC7AD-D518-441A-85F0-BC3BCA352EC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
